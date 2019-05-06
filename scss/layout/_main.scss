@@ -1,0 +1,11 @@
+.main {
+    padding: 0 8rem 8rem 8rem;
+    text-align: center;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 35rem));
+        grid-gap: 10rem;
+        justify-content: center;
+    }
+}
