@@ -7,18 +7,46 @@
     padding: 4rem 5rem 3rem 4rem;
     text-align: center;
 
+    @media (max-width: 81.25em) { // 1300px
+        top: -14rem;
+    }
+
+    @media (max-width: 60.5em) { // 968px
+        width: 70%;
+    }
+
+    @media (max-width: 35.5em) { // 568px
+        width: 90%;
+    }
+
     &__heading {
         font-family: $font-secondary;
         font-size: 3rem;
         margin-bottom: 2rem;
+
+        @media (max-width: 48em) { // 768px
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 35.5em) { // 568px
+            font-size: 2rem;
+        }
     }
 
     &__description {
         margin-bottom: 3rem;
+
+        @media (max-width: 35.5em) { // 568px
+            font-size: 1.3rem;
+        }
     }
 
     &__input-group {
         display: flex;
+
+        @media (max-width: 81.25em) { // 1300px
+            flex-direction: column;
+        }
     }
 
     &__input {
@@ -27,6 +55,11 @@
         border-radius: 10rem;
         flex: 0 0 63%;
         margin-right: auto;
+
+        @media (max-width: 81.25em) { // 1300px
+            flex: 1;
+            margin: 0 0 1.5rem 0;
+        }
     }
 
     &__btn {

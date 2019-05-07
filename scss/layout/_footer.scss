@@ -3,6 +3,14 @@
     background-color: $color-dark;
     position: relative;
 
+    @media (max-width: 69.36em) { // 1110px
+        padding: 25rem 8rem 5rem 8rem;
+    }
+
+    @media (max-width: 48em) { // 768px
+        padding: 25rem 3rem 5rem 3rem;
+    }
+
     &__logo-box {
         height: 4rem;
         width: auto;
@@ -11,10 +19,15 @@
 
     &__logo {
         height: 100%;
+        width: auto;
     }
 
     &__wrapper {
         display: flex;
+
+        @media (max-width: 69.36em) { // 1110px
+            flex-direction: column;
+        }
     }
 
     &__location,
@@ -25,12 +38,26 @@
 
     &__location {
         display: flex;
+
+        @media (max-width: 69.36em) { // 1110px
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__contact {
+        @media (max-width: 69.36em) { // 1110px
+            margin-bottom: 5rem;
+        }
     }
 
     &__contact-box {
         display: flex;
         margin-bottom: 1.5rem;
         padding-left: 7rem;
+
+        @media (max-width: 69.36em) { // 1110px
+            padding-left: 0;
+        }
     }
 
     &__icon {
@@ -45,17 +72,38 @@
         span {
             display: block;
         }
+
+        @media (max-width: 35.5em) { // 568px
+            font-size: 1.3rem;
+        }
     }
 
     &__list {
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 5rem;
     }
 
     &__item {
         flex: 0 0 50%;
         margin-bottom: 1.5rem;
+
+        @media (max-width: 69.36em) { // 1110px
+            flex: 0 0 100%;
+
+            &:nth-child(1) {order: 1;}
+            &:nth-child(2) {order: 5;}
+            &:nth-child(3) {order: 2;}
+            &:nth-child(4) {order: 6;}
+            &:nth-child(5) {order: 3;}
+            &:nth-child(6) {order: 7;}
+            &:nth-child(7) {
+                order: 4;
+                margin-bottom: 4rem;
+            }
+
+        }
     }
 
     &__link {
@@ -65,6 +113,11 @@
 
     &__social-media {
         flex: 0 0 15rem;
+
+        @media (max-width: 69.36em) { // 1110px
+            flex: 0;
+            align-self: center;
+        }
     }
 
     &__social-media-wrapper {
@@ -90,6 +143,10 @@
 .copyright {
     text-align: center;
     margin-top: 5rem;
+
+    @media (max-width: 69.36em) { // 1110px
+        margin-top: 1.5rem;
+    }
 
     &__description {
         font-size: 1.2rem;

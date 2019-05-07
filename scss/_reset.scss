@@ -8,4 +8,8 @@
 
 html {
     font-size: 62.5%; // 10px
+
+    @media (max-width: 48em) { // 768px
+        font-size: 56.25%; // 9px
+    }
 }
