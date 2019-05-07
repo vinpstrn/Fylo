@@ -2,9 +2,7 @@
     padding: 5rem 8rem 30rem 8rem;
 
     &__wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 4rem;
+        display: flex;
         position: relative;
     }
 
@@ -13,6 +11,11 @@
         background-color: $color-dark-3;
         position: relative;
         z-index: 10;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-right: 3rem;
+        }
     }
 
     &__photo-box {
