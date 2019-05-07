@@ -1,0 +1,102 @@
+.footer {
+    padding: 20rem 8rem 5rem 8rem;
+    background-color: $color-dark;
+    position: relative;
+
+    &__logo-box {
+        height: 4rem;
+        width: auto;
+        margin-bottom: 3rem;
+    }
+
+    &__logo {
+        height: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__location,
+    &__contact,
+    &__about-us {
+        flex: 1;
+    }
+
+    &__location {
+        display: flex;
+    }
+
+    &__contact-box {
+        display: flex;
+        margin-bottom: 1.5rem;
+        padding-left: 7rem;
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: $color-white;
+        display: block;
+        margin-right: 1.5rem;
+    }
+
+    &__description {
+        span {
+            display: block;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: 1.5rem;
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &__social-media {
+        flex: 0 0 15rem;
+    }
+
+    &__social-media-wrapper {
+        display: flex;
+    }
+
+    &__social-media-box {
+        border: 1px solid $color-white;
+        border-radius: 50%;
+        padding: .5rem;
+        margin-right: 1.5rem;
+    }
+
+    &__social-media-icon {
+        display: block;
+        height: 2rem;
+        width: 2rem;
+        fill: $color-white;
+    }
+}
+
+// COPYRIGHT 
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+
+    &__description {
+        font-size: 1.2rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $color-cyan;
+    }
+}

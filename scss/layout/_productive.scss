@@ -39,5 +39,10 @@
         color: $color-cyan;
         padding-bottom: .5rem;
         border-bottom: 1px solid $color-cyan;
+        display: inline-block;
+
+        span {
+            vertical-align: -0.25rem;
+        }
     }
 }

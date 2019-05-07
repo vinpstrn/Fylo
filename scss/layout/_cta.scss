@@ -1,0 +1,35 @@
+.cta {
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-dark-1;
+    padding: 4rem 5rem 3rem 4rem;
+    text-align: center;
+
+    &__heading {
+        font-family: $font-secondary;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        margin-bottom: 3rem;
+    }
+
+    &__input-group {
+        display: flex;
+    }
+
+    &__input {
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 10rem;
+        flex: 0 0 63%;
+        margin-right: auto;
+    }
+
+    &__btn {
+        padding: 1rem 3rem;
+    }
+}

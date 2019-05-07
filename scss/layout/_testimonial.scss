@@ -1,15 +1,18 @@
 .testimonial {
-    padding: 5rem 8rem;
+    padding: 5rem 8rem 30rem 8rem;
 
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 4rem;
+        position: relative;
     }
 
     &__box {
-        padding: 3rem;
+        padding: 4rem 3rem 3rem 3rem;
         background-color: $color-dark-3;
+        position: relative;
+        z-index: 10;
     }
 
     &__photo-box {
@@ -31,7 +34,14 @@
         span {
             display: block;
             font-weight: 400;
+            font-size: 1.2rem;
         }
+    }
+
+    &__quote {
+        position: absolute;
+        top: -3.5rem;
+        left: -1rem;
     }
 
 }
